@@ -5,6 +5,13 @@
   <%= f.text_field :recipe_title %> <br>
 
   <%= f.fields_for :recipes do |r| %>
+  <!-- ingredient 0 -->
+    <%= r.label :name %>
+    <%= r.text_field :0_name %><br>
+
+    <%= r.label :quantity %>
+    <%= r.text_field :0_quantity %>
+<!-- ingredient 1 -->
     <%= r.label :name %>
     <%= r.text_field :0_name %><br>
 
