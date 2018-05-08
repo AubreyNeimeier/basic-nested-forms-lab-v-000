@@ -6,10 +6,10 @@
 
   <%= f.fields_for :recipes do |r| %>
     <%= r.label :name %>
-    <%= r.text_field :name %><br>
+    <%= r.text_field :0_name %><br>
 
     <%= r.label :quantity %>
-    <%= r.text_field :quantity %>
+    <%= r.text_field :0_quantity %>
   <% end %>
   <%= f.submit %>
 <% end %>
